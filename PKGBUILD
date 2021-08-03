@@ -12,13 +12,13 @@ url='https://code-industry.net/free-pdf-editor/'
 arch=('x86_64')
 license=('custom')
 makedepends=('patchelf')
-source_x86_64=("https://code-industry.net/public/master-pdf-editor-${pkgver}-qt5.x86_64.tar.gz"
-               masterpdfeditor5.desktop)
-sha1sums_x86_64=('0225cccbda7a3d0b7a6041c64cbda6f997d3095d'
-                 'b33e7148123565fd4cc15d41c493f6ab27d37ba4')
+source_x86_64=('master-pdf-editor-5.6.80-qt5.x86_64.tar.gz'
+               'masterpdfeditor5.desktop')
+sha256sums_x86_64=('9fbda562095ddaca973af73aaefd51f8e46dc30e215469bb5183958a60dae207'
+                   '9ee71833377f40890bfc6d08a9ce6943550ecf89f52a94471c5326487844df94')
 
 package() {
-  depends=('libgl' 'nspr' 'nss' 'qt5-base' 'qt5-svg' 'sane')
+  depends=('libgl' 'nspr' 'nss' 'qt5-base' 'qt5-svg' 'sane' 'util-linux')
 
   install -d "$pkgdir"{/opt/,/usr/bin/}
   cp -a --no-preserve=ownership master-pdf-editor-${pkgver%%.*} "$pkgdir/opt/"
