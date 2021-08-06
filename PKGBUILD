@@ -7,6 +7,7 @@
 pkgname=masterpdfeditor
 pkgver=5.6.80
 pkgrel=1
+epoch=100
 pkgdesc='A complete solution for viewing, creating and editing PDF files'
 url='https://code-industry.net/free-pdf-editor/'
 arch=('x86_64')
@@ -15,7 +16,7 @@ makedepends=('patchelf')
 source_x86_64=('master-pdf-editor-5.6.80-qt5.x86_64.tar.gz'
                'masterpdfeditor5.desktop')
 sha256sums_x86_64=('9fbda562095ddaca973af73aaefd51f8e46dc30e215469bb5183958a60dae207'
-                   '9ee71833377f40890bfc6d08a9ce6943550ecf89f52a94471c5326487844df94')
+                   'fa380da45926166ba8fe474276fe309eeae7187906f5e2c1e0f18a8863af6b1a')
 
 package() {
   depends=('libgl' 'nspr' 'nss' 'qt5-base' 'qt5-svg' 'sane' 'util-linux')

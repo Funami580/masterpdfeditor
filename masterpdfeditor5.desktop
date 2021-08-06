@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=Master PDF Editor 5
 Comment=Edit PDF files
-Exec=unshare -c -n /opt/master-pdf-editor-5/masterpdfeditor5 %f
+Exec=unshare -cn --keep-caps /opt/master-pdf-editor-5/masterpdfeditor5 %f
 Path=/opt/master-pdf-editor-5
 Terminal=false
 Icon=/opt/master-pdf-editor-5/masterpdfeditor5.png
